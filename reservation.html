@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Reservation - Rent A Beast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/lorenbazon96/Web/main/ico.png">
+    <style>
+        /* Stilovi za desktop uređaje */
+        @media (min-width: 767px) {
+          a {
+            text-decoration: none; 
+            }
+          body{
+            background-image:url("https://raw.githubusercontent.com/lorenbazon96/Web/main/super_sports_cars-HD.jpg");
+            background-position: center top 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            }
+          .navbar {
+            margin-top: 20px;      
+            }
+          .header-image {
+            margin-top: 1%;
+            width: 600px;
+            }
+          .nav-link {
+            font-size: 27px;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: bold;
+            }
+          .container {
+            margin: 20px auto;
+            padding: 20px;
+            font-family: "Georgia";
+            font-style: italic;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.538);
+            cursor: text;
+            border-radius: 55px;
+            }
+          .container p {
+            margin-bottom: 6px;
+            line-height: 1.8;
+            }
+          #h1-s {
+            margin-top: 50px;
+            }
+          h1 {
+            font-style: italic;
+            }
+          form .form-group {
+            margin-bottom: 15px;
+          }
+          .custom-form {
+            color: #000000; 
+            padding: 20px;
+            border-radius: 10px;
+          }
+          .custom-form input,
+          .custom-form select,
+          .custom-form textarea {
+              background-color: #7d7d7d; 
+              border: 1px solid #ccc; 
+              color: #ffffff; 
+          }
+          .custom-form input:focus,
+          .custom-form select:focus,
+          .custom-form textarea:focus {
+              border-color: #ff0000; 
+              box-shadow: 0 0 5px rgb(255, 0, 0); 
+          }
+          .custom-select {
+            background-color: #f0f8ff; 
+            color: #333; 
+            border: 1px solid #ccc; 
+          }
+        }
+  
+        /* Stilovi za mobilne uređaje */
+        @media (max-width: 767px) {
+          a {
+            text-decoration: none; 
+            }
+          body{
+            background-image:url("https://raw.githubusercontent.com/lorenbazon96/Web/main/super_sports_cars-HD.jpg");
+            background-position: center top 8vh;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-color: black;
+            }
+          .navbar {
+            margin-top: 20px;     
+            }
+          .header-image {
+            margin: 0 auto;
+            margin-top: 2%;
+            width: 600px;
+            height: auto;
+            }
+          .nav-link {
+            font-size: 27px;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: bold;
+            }
+          .container {
+            margin: 20px auto;
+            padding: 20px;
+            font-family: "Georgia";
+            font-style: italic;
+            font-size: 17px;
+            background-color: rgba(255, 255, 255, 0.553);
+            border-radius: 55px;
+            }
+          .container p {
+            margin-bottom: 6px;
+            line-height: 1.8;
+            }
+          #h1-s {
+            margin-top: 50px;
+            }
+          h1 {
+            font-style: italic;
+            }
+          form .form-group {
+            margin-bottom: 15px;
+          }
+          .custom-form {
+            color: #000000; 
+            padding: 20px;
+            border-radius: 10px;
+          }
+          .custom-form input,
+          .custom-form select,
+          .custom-form textarea {
+              background-color: #7d7d7d; 
+              border: 1px solid #ccc; 
+              color: #ffffff; 
+          }
+          .custom-form input:focus,
+          .custom-form select:focus,
+          .custom-form textarea:focus {
+              border-color: #ff0000; 
+              box-shadow: 0 0 5px rgb(255, 0, 0); 
+          }
+          .custom-select {
+            background-color: #f0f8ff; 
+            color: #333; 
+            border: 1px solid #ccc; 
+          }
+          .navbar-toggler {
+            border: none;
+            outline: none;
+            }
+        }
+    </style>
+</head>
+  <body>
+    <a href="index.html">
+      <img src="https://raw.githubusercontent.com/lorenbazon96/Web/main/fire-desktop-wallpaper.png" alt="Rent-a-Beast Logo" class="header-image">
+    </a>
+
+    <nav class="navbar navbar-expand-lg bg-body-temporary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="features.html">Features</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
+              <a class="nav-link" href="about.html">About us</a>
+              <a class="nav-link active" aria-current="page" href="reservation.html">Reservation</a>
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1>Online Reservation</h1>
+        <p>Reserve one of our luxury vehicles by filling out the form below. We'll confirm your reservation as soon as possible.</p>
+        <form id="reservationForm">
+            <div class="custom-form">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="custom-form">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="custom-form">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="custom-form">
+                <label for="car">Select Car</label>
+                <select class="form-control custom-select" id="car" required>
+                    <option value="">Choose a car</option>
+                    <option value="ferrari-f430">Ferrari F430</option>
+                    <option value="audi-r8">Audi R8</option>
+                    <option value="mercedes-sls">Mercedes AMG GT</option>
+                    <option value="aston-martin">Aston Martin DBS Superleggera</option>
+                    <option value="lamborghini">Lamborghini Aventador LP750-4 SV</option>
+                    <option value="porsche">Porsche GT3 RS</option>
+                    <option value="maserati">Maserati MC20</option>
+                </select>
+            </div>
+            <div class="custom-form">
+                <label for="date">Reservation Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="custom-form">
+                <label for="message">Additional Requests</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter any additional requests or information"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit Reservation</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function() {
+            $('#reservationForm').submit(function(event) {
+                event.preventDefault();
+
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var phone = $('#phone').val();
+                var car = $('#car').val();
+                var date = $('#date').val();
+                var message = $('#message').val();
+
+                $('#successModal').modal('show');
+            });
+        });
+    </script>
+
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">Reservation Successful</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p>Thank you, your reservation has been successfully submitted!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
